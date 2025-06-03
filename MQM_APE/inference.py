@@ -13,17 +13,26 @@ class Inference():
     def __init__(self, 
                  model_path: str,
                  tp: int=1,
+                 tokenizer: str=None,
+                 gpu_memory_utilization: float=0.8,
+                 trust_remote_code: bool=True, 
+                 vllm_args=None,
                  ) -> None:
         
         # load model
-        self.tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
+        self.tokenizer = AutoTokenizer.from_pretrained(tokenizer or model_path, trust_remote_code=trust_remote_code)
         self.tokenizer.pad_token = self.tokenizer.eos_token
+        args = {
+            'model': model_path,
+            'tokenizer': tokenizer or model_path,
+            'tensor_parallel_size': tp,
+            'gpu_memory_utilization': gpu_memory_utilization,
+            'trust_remote_code': trust_remote_code,
+        }
+        if vllm_args:
+            args = {**args, **vllm_args}
         self.model = LLM(
-            model=model_path,
-            tokenizer=model_path,
-            tensor_parallel_size=tp,
-            gpu_memory_utilization=0.8,
-            trust_remote_code=True
+            **args
         )
         
     def input2prompt(self, sample):
