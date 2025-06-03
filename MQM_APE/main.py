@@ -53,10 +53,10 @@ class MQM_APE():
         self.scorer = Scorer(scorer_type='MQM-APE')
 
         if verifier_type == 'llm': # init different verifier for llm or metrics
-            from module_verifier import Pairwise_Quality_Verifier
+            from .module_verifier import Pairwise_Quality_Verifier
             self.verifier_module = Pairwise_Quality_Verifier(self.inference, **configs['verifier'])
         else:
-            from module_verifier_metric import Pairwise_Quality_Verifier_Metric
+            from .module_verifier_metric import Pairwise_Quality_Verifier_Metric
             self.verifier_module = Pairwise_Quality_Verifier_Metric(**configs['verifier'])
 
 
