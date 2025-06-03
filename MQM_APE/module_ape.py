@@ -1,10 +1,10 @@
 import os.path as osp
 from typing import List, Dict, Tuple
 
-from basemodule import BaseModule
-from inference import Inference
-from prompts.prompts import TEMPLATE_POSTEDIT
-from utils import (
+from .basemodule import BaseModule
+from .inference import Inference
+from .prompts.prompts import TEMPLATE_POSTEDIT
+from .utils import (
     apply_template, 
     truncate_response, 
     load_yaml,

@@ -1,9 +1,9 @@
 import os.path as osp
 from typing import Any, List, Dict, Tuple
 
-from basemodule import BaseModule
-from cometkiwi import COMETKiwi
-from utils import (
+from .basemodule import BaseModule
+from .cometkiwi import COMETKiwi
+from .utils import (
     read_json, 
     save_json,
     load_yaml,

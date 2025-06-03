@@ -11,11 +11,11 @@ import os
 import os.path as osp
 from typing import Dict, Any, Literal, List, Tuple
 
-from inference import Inference
-from module_evaluator import Error_Analysis_Evaluator
-from module_ape import Automatic_Post_Editor
-from scorer import Scorer
-from utils import (
+from .inference import Inference
+from .module_evaluator import Error_Analysis_Evaluator
+from .module_ape import Automatic_Post_Editor
+from .scorer import Scorer
+from .utils import (
     save_json, 
     load_yaml, 
     readlines_txt, 

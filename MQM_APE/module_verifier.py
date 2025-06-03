@@ -1,10 +1,10 @@
 import os.path as osp
 from typing import Any, List, Dict, Tuple
 
-from basemodule import BaseModule
-from inference import Inference
-from prompts.prompts import TEMPLATE_VERIFIER
-from utils import (
+from .basemodule import BaseModule
+from .inference import Inference
+from .prompts.prompts import TEMPLATE_VERIFIER
+from .utils import (
     apply_template, 
     truncate_response,
     read_json, 

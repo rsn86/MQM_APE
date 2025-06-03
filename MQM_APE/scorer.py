@@ -1,7 +1,7 @@
 import os
 import os.path as osp
 from typing import List, Dict, Literal
-from utils import read_json, save_txt
+from .utils import read_json, save_txt
 
 class Scorer():
 

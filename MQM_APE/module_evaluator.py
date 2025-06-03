@@ -2,10 +2,10 @@ import os.path as osp
 import re
 from typing import List, Dict, Tuple
 
-from basemodule import BaseModule
-from inference import Inference
-from prompts.prompts import TEMPLATE_GEMBA_MQM_FEWSHOT
-from utils import (
+from .basemodule import BaseModule
+from .inference import Inference
+from .prompts.prompts import TEMPLATE_GEMBA_MQM_FEWSHOT
+from .utils import (
     apply_template,
     save_json,
     save_txt, 
