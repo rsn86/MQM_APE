@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "mqm-ape"
 version = "0.1.0"
@@ -21,4 +25,7 @@ dependencies = [
 Homepage = "https://github.com/Coldmist-Lu/MQM_APE/tree/main"
 Repository = "https://github.com/Coldmist-Lu/MQM_APE.git"
 Issues = "https://github.com/Coldmist-Lu/MQM_APE/issues"
+
+[tool.setuptools]
+packages = ["MQM_APE"]
 
