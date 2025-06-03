@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mqm-ape"
-version = "0.1.1"
+version = "0.1.2"
 description = "Toward High-Quality Error Annotation Predictors with Automatic Post-Editing in LLM Translation Evaluators."
 authors = [
     { name = "Qingyu Lu", email = "luqingyu@seu.edu.cn"},
