@@ -1,3 +1,11 @@
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "transformers",
+#     "unbabel-comet",
+#     "vllm>=0.4.0",
+# ]
+# ///
 import argparse
 import os
 import os.path as osp

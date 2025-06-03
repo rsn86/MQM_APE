@@ -1,0 +1,24 @@
+[project]
+name = "mqm-ape"
+version = "0.1.0"
+description = "Toward High-Quality Error Annotation Predictors with Automatic Post-Editing in LLM Translation Evaluators."
+authors = [
+    { name = "Qingyu Lu", email = "luqingyu@seu.edu.cn"},
+    { name = "Liang Ding", email = "liangding.liam@gmail.com"},
+    { name = "Kanjian Zhang", email = "kjzhang@seu.edu.cn"},
+    { name = "Jinxia Zhang", email = "jinxiazhang@seu.edu.cn"},
+    { name = "Dacheng Tao", email = "dacheng.tao@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "transformers>=4.52.4",
+    "unbabel-comet>=2.2.6",
+    "vllm>=0.4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Coldmist-Lu/MQM_APE/tree/main"
+Repository = "https://github.com/Coldmist-Lu/MQM_APE.git"
+Issues = "https://github.com/Coldmist-Lu/MQM_APE/issues"
+
